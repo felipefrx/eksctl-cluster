@@ -63,19 +63,19 @@ iam:
       namespace: cert-manager
     wellKnownPolicies:
       certManager: true
-    roleName: eks-prd-legado-certmanager
+    roleName: eks-certmanager
     roleOnly: true
   - metadata:
       name: cluster-autoscaler
       namespace: kube-system
     wellKnownPolicies:
       autoScaler: true
-    roleName: eks-prd-legado-cluster-autoscaler
+    roleName: eks-autoscaler
     roleOnly: true
   - metadata:
       name: efs-csi-controller-sa
       namespace: kube-system
     wellKnownPolicies:
       efsCSIController: true
-    roleName: eks-prd-legado-efs-csi-controller
+    roleName: eks-efs-csi-controller
     roleOnly: true
